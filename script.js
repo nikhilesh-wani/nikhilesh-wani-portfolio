@@ -1,6 +1,27 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 if (window.lucide) window.lucide.createIcons({ attrs: { 'stroke-width': 1.7 } });
 
+// Mobile hamburger menu
+const navHeader = document.querySelector('.nav');
+if (navHeader) {
+  const navMenu = navHeader.querySelector('nav');
+  const toggle = document.createElement('button');
+  toggle.className = 'nav-toggle';
+  toggle.setAttribute('aria-label', 'Menu');
+  toggle.innerHTML = '<span></span><span></span><span></span>';
+  navHeader.insertBefore(toggle, navHeader.querySelector('.nav-cta'));
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    navMenu.classList.toggle('open');
+  });
+  navMenu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      toggle.classList.remove('open');
+      navMenu.classList.remove('open');
+    });
+  });
+}
+
 const devicons = document.createElement('link');
 devicons.rel = 'stylesheet';
 devicons.href = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css';
