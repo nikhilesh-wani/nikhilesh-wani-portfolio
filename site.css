@@ -116,11 +116,16 @@ body {
 }
 .nav-toggle span {
   display: block;
-  width: 100%;
+  width: 22px;
   height: 2px;
   background: var(--ink);
   border-radius: 1px;
   transition: transform .3s, opacity .3s;
+}
+@media (max-width: 760px) {
+  .nav .brand { margin-right: auto; }
+  .nav .nav-cta { font-size: 10px; order: 1; }
+  .nav-toggle { order: 2; margin-left: 10px; }
 }
 .nav-toggle.open span:nth-child(1) {
   transform: translateY(3.5px) rotate(45deg);
@@ -185,9 +190,9 @@ body {
   justify-content: center;
 }
 .portrait {
-  width: 300px;
+  width: 100%;
   aspect-ratio: 3 / 4;
-  border-radius: 150px 150px 5px 5px;
+  border-radius: 16px;
   overflow: hidden;
   background: #ddd;
   position: relative;
@@ -215,7 +220,7 @@ body {
   height: 50%;
   background: linear-gradient(to top, rgba(0,0,0,.45) 0%, transparent 100%);
   z-index: 1;
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 16px 16px;
   pointer-events: none;
 }
 
@@ -1095,9 +1100,8 @@ body {
     font-size: 14px;
     border-bottom: 1px solid var(--rule);
   }
-  .nav nav a:last-child { border-bottom: none; }
+  .nav nav a:last-of-type { border-bottom: none; }
   .nav nav a::after { display: none; }
-  .nav .nav-cta { font-size: 10px; }
 
   .hero {
     grid-template-columns: 1fr;
@@ -1111,8 +1115,12 @@ body {
 
   .hero-portrait { height: auto; }
   .portrait {
-    width: 220px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
+    aspect-ratio: 4 / 3;
+  }
+  .portrait img {
+    object-position: 50% 45%;
   }
 
   .focus {
@@ -1214,7 +1222,7 @@ body {
   }
   .hero h1 em, .title-block h1 em, .contact-hero h1 em { letter-spacing: -.65px; }
 
-  .portrait { width: 200px; }
+  .portrait { width: 100%; }
 
   .work-meta h3 { font-size: 20px; }
 
