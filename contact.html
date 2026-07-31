@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact Nikhilesh Wani for web, mobile, and product development." />
+    <title>Let’s talk — Nikhilesh Wani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body class="contact-page">
+    <header class="nav shell"><a href="index.html" class="brand"><span>N</span>W.</a><nav><a href="index.html#work">Work</a><a href="services.html">Services</a><a href="index.html#about">About</a></nav><a class="nav-cta" href="contact.html">Let's talk ↗</a></header>
+    <main>
+      <section class="contact-hero shell">
+        <div>
+          <p class="eyebrow">Start a project</p>
+          <h1>Let’s make<br />something <em>useful.</em></h1>
+          <p>Have a product in mind, a workflow that needs fixing, or a website that needs to work harder? Share the outline and I’ll get back to you.</p>
+          <div class="contact-points"><div><i data-lucide="message-circle"></i><span><b>Let’s discuss</b><small>Your goals, users, and the opportunity.</small></span></div><div><i data-lucide="file-text"></i><span><b>Get a quote</b><small>A practical scope and considered estimate.</small></span></div></div>
+        </div>
+        <form class="quote-form" id="quote-form">
+          <div class="form-head"><p>Tell me a little about it</p><span>01 / 01</span></div>
+          <label>Your name<input name="name" type="text" autocomplete="name" placeholder="Jane Smith" required /></label>
+          <label>Email address<input name="email" type="email" autocomplete="email" placeholder="jane@company.com" required /></label>
+          <label>Phone number<input name="phone" type="tel" autocomplete="tel" placeholder="+91 98765 43210" required /></label>
+          <label>What can I help with?<select name="service" required><option value="" disabled selected>Select a service</option><option>Website development</option><option>Web application development</option><option>Mobile application development</option><option>UI/UX design</option><option>AI integration or advisory</option><option>Something else</option></select></label>
+          <label>Project details<textarea name="details" rows="4" placeholder="A few words about the problem, scope, or timeframe…" required></textarea></label>
+          <button class="button" type="submit">Send project enquiry <span>→</span></button>
+          <p class="form-success" role="status" aria-live="polite">Thanks — your project enquiry is ready to send. I’ll be in touch soon.</p>
+          <p class="form-error" role="alert">Something went wrong while sending your enquiry. Please try again.</p>
+        </form>
+      </section>
+    </main>
+    <footer class="footer shell"><a href="index.html" class="brand"><span>N</span>W.</a><p>© <span id="year"></span> Nikhilesh Wani.</p><a href="index.html">Home ↑</a></footer>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script><script src="script.js"></script>
+  </body>
+</html>
