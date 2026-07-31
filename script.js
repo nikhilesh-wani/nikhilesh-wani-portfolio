@@ -1,11 +1,6 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 if (window.lucide) window.lucide.createIcons({ attrs: { 'stroke-width': 1.7 } });
 
-const refinements = document.createElement('link');
-refinements.rel = 'stylesheet';
-refinements.href = 'refinements.css';
-document.head.append(refinements);
-
 const devicons = document.createElement('link');
 devicons.rel = 'stylesheet';
 devicons.href = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css';
@@ -113,4 +108,17 @@ const addendum = projectAddenda[location.pathname.split('/').pop()];
 const caseBody = document.querySelector('.case-body');
 if (addendum && caseBody) {
   caseBody.insertAdjacentHTML('beforeend', `<section class="case-addendum"><p class="eyebrow">Product focus</p><div><span>Challenge</span><p>${addendum.challenge}</p></div><div><span>Approach</span><p>${addendum.approach}</p></div><div><span>Enables</span><p>${addendum.enables}</p></div></section>`);
+}
+
+const fadeEls = document.querySelectorAll('.fade-in');
+if (fadeEls.length) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  fadeEls.forEach((el) => observer.observe(el));
 }
