@@ -43,6 +43,9 @@ body {
   background: rgba(246, 244, 239, .85);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 100%;
+  padding: 0 max(32px, calc((100% - 1180px) / 2));
 }
 
 /* Brand wordmark */
