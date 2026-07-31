@@ -57,7 +57,10 @@ if (quoteForm) {
     try {
       const response = await fetch('https://sheetdb.io/api/v1/y2frw3avr80k0', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer 4yh5sodekptnmo8j7j9djgdx59r4qqyqh2d3m2as'
+        },
         body: JSON.stringify({
           data: [{
             'Sr. no.': 'INCREMENT',
