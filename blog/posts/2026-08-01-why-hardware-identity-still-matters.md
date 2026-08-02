@@ -2,7 +2,7 @@
 title: Why Hardware Identity Still Matters
 date: 2026-08-01
 description: Passwords are a shared secret. Biometrics on a server are a
-  honeypot. A credential vault on your person changes the trust model entirely.
+  honeypot. A credential vault on your person changes the trust model entirely
 tags:
   - Identity
   - Hardware
@@ -26,6 +26,12 @@ What if the credential never left your person? That's the premise behind Bytesea
 
 The device doesn't eliminate the need for servers or protocols. It changes *where trust anchors*. Instead of asking "does the server believe this is you?", the question becomes "does the device in your hand confirm you're present?"
 
+
+
+```
+JS Code
+```
+
 ## Why this matters now
 
 Three trends make hardware identity more practical than it was five years ago:
@@ -33,6 +39,8 @@ Three trends make hardware identity more practical than it was five years ago:
 1. **BLE 5+ reliability** — low-energy connections are finally stable enough for real-time credential exchange
 2. **On-chip biometric matching** — fingerprint sensors with embedded matching eliminate the need to send templates anywhere
 3. **Passkey momentum** — FIDO2/WebAuthn adoption means relying parties are already prepared to accept hardware-bound credentials
+
+![](https://nikhilesh-wani-portfolio.pages.dev/assets/blog/erp.png)
 
 ## The road ahead
 
