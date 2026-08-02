@@ -4,6 +4,10 @@ backend:
   branch: main
   auth_type: pkce
   app_id: Ov23licB8o9wwb0CO4SD
+  base_url: https://nikhilesh-wani.github.io
+  site_domain: nikhilesh-wani.github.io
+
+site_url: https://nikhilesh-wani.github.io/nikhilesh-wani-portfolio
 
 media_folder: "assets/blog"
 public_folder: "/assets/blog"
