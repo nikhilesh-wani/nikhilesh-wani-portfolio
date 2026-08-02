@@ -3,6 +3,7 @@ backend:
   repo: nikhilesh-wani/nikhilesh-wani-portfolio
   branch: main
   base_url: https://cms-oauth.nikhileshwani09.workers.dev
+  auth_endpoint: /auth
 
 site_url: https://nikhilesh-wani-portfolio.pages.dev
 
