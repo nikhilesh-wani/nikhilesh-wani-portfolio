@@ -1,14 +1,16 @@
 ---
-title: "Why Hardware Identity Still Matters"
+title: Why Hardware Identity Still Matters
 date: 2026-08-01
-description: "Passwords are a shared secret. Biometrics on a server are a honeypot. A credential vault on your person changes the trust model entirely."
+description: Passwords are a shared secret. Biometrics on a server are a
+  honeypot. A credential vault on your person changes the trust model entirely.
 tags:
   - Identity
   - Hardware
   - Byteseal
 ---
-
 We keep trying to fix authentication by adding layers — two-factor codes, push notifications, passkeys stored in a cloud keychain. Each layer reduces one risk while quietly introducing another: a new intermediary, a new sync surface, a new place where your credential exists outside your control.
+
+![](/assets/blog/smart-ring.png)
 
 ## The core problem
 
@@ -18,9 +20,9 @@ Digital identity today is **custodial by default**. Whether it's a password hash
 
 What if the credential never left your person? That's the premise behind Byteseal — a credit-card-sized vault that:
 
-- Stores encrypted credentials **locally**, behind a fingerprint gate
-- Releases them over BLE only after **on-device biometric match**
-- Never transmits the biometric template itself
+* Stores encrypted credentials **locally**, behind a fingerprint gate
+* Releases them over BLE only after **on-device biometric match**
+* Never transmits the biometric template itself
 
 The device doesn't eliminate the need for servers or protocols. It changes *where trust anchors*. Instead of asking "does the server believe this is you?", the question becomes "does the device in your hand confirm you're present?"
 
