@@ -10,7 +10,7 @@ tags:
 ---
 We keep trying to fix authentication by adding layers — two-factor codes, push notifications, passkeys stored in a cloud keychain. Each layer reduces one risk while quietly introducing another: a new intermediary, a new sync surface, a new place where your credential exists outside your control.
 
-![](/assets/blog/smart-ring.png)
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUfu3aQkTPCVTVuGPd-cstUrzpdzc4Ps7JFZL7XV_fGfedbcoB0hk8HLyRqzv5RqTZONRqv6ZyJdbfWFB0Y52B0L8g7eFcRFLLKGbxHHgw&s=10)
 
 ## The core problem
 
