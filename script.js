@@ -33,7 +33,7 @@ document.querySelectorAll('.nav nav').forEach((menu) => {
   if (!menu.querySelector('a[href="index.html"]')) menu.insertAdjacentHTML('afterbegin', '<a href="index.html">Home</a>');
 });
 
-if (location.pathname.endsWith('index.html') || location.pathname.endsWith('/')) {
+if (location.pathname.endsWith('index.html') || location.pathname.endsWith('/') || location.pathname.endsWith('portfolio.html')) {
   document.querySelectorAll('.section .eyebrow, .dark-section .eyebrow, .contact .eyebrow').forEach((label) => {
     label.textContent = label.textContent.replace(/^\s*\d+\s*\/\s*/, '');
   });

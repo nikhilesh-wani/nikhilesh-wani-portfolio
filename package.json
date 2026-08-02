@@ -1,0 +1,12 @@
+{
+  "name": "nikhilesh-wani-portfolio",
+  "version": "2.1.0",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
